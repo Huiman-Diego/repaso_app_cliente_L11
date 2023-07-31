@@ -1,0 +1,13 @@
+@server = https://huiman-diego-animated-space-palm-tree-7g444v5qx4vhpjg-8080.preview.app.github.dev
+@emp = {{server}}/api/employees
+###
+GET {{emp}}
+###
+POST {{emp}}
+Content-Type: application/json
+
+{
+    "firstName": "Bilbo",
+    "lastName": "Baggins",
+    "description": "burglar"
+}
