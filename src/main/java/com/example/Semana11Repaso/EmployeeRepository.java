@@ -1,7 +1,9 @@
 package com.example.Semana11Repaso;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+@RepositoryRestResource(collectionResourceRel = "empleados", path = "emps")
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 
 }
